@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2? family = Source + Sans + Pro: ital, wght @ 0,900; 1,200; 1,400 & display = swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 10;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo  h1 b{
+    color: #F08080;
+}
+.logo img{
+    height: 80px;
+    
+}
+
+.menu{
+    height: 80px;
+    margin-right: 60px;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu nav ul li:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #F08080;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu nav ul li  a i{
+    display: none;
+}
+/*menu responsive cuadrito*/
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #eeeeeefa;
+    border-radius: 100%;
+    color: #787878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+ #icon-menu:hover{
+     opacity: 0.8;
+ }
+
+
+/*portada*/
+
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 80px;
+    background-image: url(pulser.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #F08080;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+
+
+}
+
+.container-info-cover p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#info{
+    background: white;
+    color: #F08080;
+    text-align: center;
+   padding: 20px;
+}
+
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.info-pet{
+    margin: 20px;
+}
+
+.info-pet img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+/*Contenedor Tienda Online*/
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #F08080;
+}
+
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/*aside articulo*/
+
+.container-aside aside{
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.container-aside aside img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: #F08080;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+    opacity: 0.9;
+}
+
+/*buscador de contenido lupita */
+
+#ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color:#F08080;
+}
+
+ /*contenedor de la barra de busqueda*/
+
+ #ctn-bars-search{
+     position: fixed;
+     top: -10px;
+     width: 100%;
+     background: #fff;
+     padding: 20px;
+     z-index: 9;
+     transition: all 600ms;
+ }
+
+ #ctn-bars-search input{
+     display: block;
+     width: 1200px;
+     margin: auto;
+     padding: 10px;
+     font-size: 18px;
+     outline: 0;
+     
+ }
+
+ /* caja de busqueda que se despliega */
+ #box-search{
+     position: fixed;
+     top: 165px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 1200px;
+     background: #fff;
+     z-index: 8;
+     overflow: hidden;
+     display: none;
+ }
+ #box-search li a{
+     display: block;
+     width: 1200px;
+     color: #777777;
+     padding: 12px 20px;
+ }
+#box-search li a:hover{
+    background: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+/*para que le salga una sombra oscurita al recuadro buscador*/
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: o;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+
+}
+
+/*iconos de las redes sociales whatsapp y messenger */
+.container-redes{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-redes a{
+    margin-top: 4px;
+}
+.container-redes img{
+    width: 60px;
+    padding: 4px;
+    background: rgba(0,0,0,0.0);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 300ms;
+}
+.container-redes a:hover img{
+    background: rgba(0,0,0,0.10);
+}
+
+/* footer - pie de pagina*/
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: white;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+   max-width: 1200px;
+   margin: auto; 
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 200px;
+}
+
+.container-footer footer .redes-footer{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #F7f7f7;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+ footer .redes-footer .fa-facebook-f:hover {
+    background: #41579A;
+    color: #fff;
+}
+
+ footer .redes-footer .fa-twitter:hover {
+    background:  #00acee;
+    color: #fff;
+}
+
+footer .redes-footer .fa-instagram:hover {
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B,  #AE4198, #7540A1, #5443A8 );
+    color: #fff;
+}
+
+footer .redes-footer .fa-youtube:hover {
+    background: #c4302b;
+    color: #fff;
+}
+
+.container-footer footer hr{
+
+    margin-top: 20px;
+    border: none;
+    height: 4px;
+    background: #F08080;
+}
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* Boton de ir arriba*/
+#button-up{
+    width: 60px;
+    height: 60px;
+    background:#F08080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 2px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+/* Responsive desing - adaptables a dispositivos moviles*/
+
+@media screen and (max-width: 1220px){
+    .header-content,
+    .container-content,
+    .container-footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    #ctn-bars-search,
+    #ctn-bars-search input,
+    #box-search{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1020px){
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    
+    article{
+        box-shadow: 0 0 0 0;
+    }
+   
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all{
+        transform: translateX(300px);
+    }
+    .menu{
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #fff;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+   }
+
+   .show-lateral{
+       width: 300px;
+       transform: translateX(0px);
+   }
+
+   .menu nav ul{
+       flex-direction: column;
+   }
+
+   .menu nav ul li {
+       max-width: 200px;
+       height: 50px;
+       justify-content: flex-start;
+   }
+
+   .menu nav ul li a{
+       margin-top: 40px;
+       color: #F08080;
+   }
+
+   .menu nav ul li a i{
+       width: 20px;
+       display: inline-block;
+       margin-right: 10px;
+       color: black;
+   }
+   #icon-menu{
+       display: flex;
+       right: 60px;
+   }
+
+   .container-aside{
+       flex-wrap: wrap;
+   }
+}
+
+
+
+/*Slider de imagenes que se mueven*/
+/*body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+img{
+    max-width: 100%;
+    width: 1000px;
+    height: 300px;
+    
+}
+
+.container-all{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+ 
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background:rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% *1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% *2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+@keyframes autoplay{
+    33%{
+        transform:translate3d(calc(-100% * 0), 0, 0);
+    }
+
+        33%{
+            transform:translate3d(calc(-100% * 1), 0, 0);
+        }
+        100%{
+            transform:translate3d(calc(-100% * 2), 0, 0);
+        }
+}*/
